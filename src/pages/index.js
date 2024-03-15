@@ -41,6 +41,13 @@ const samplePageLinks = [
     description:
       "A simple example of linking to another page within a Gatsby site",
   },
+  {
+    text: "About",
+    url: "about",
+    badge: false,
+    description:
+      "A simple example of linking to another page within a Gatsby site",
+  },
   { text: "TypeScript", url: "using-typescript" },
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
@@ -82,7 +89,7 @@ const IndexPage = () => (
         style={{ marginBottom: `var(--space-3)` }}
       />
       <h1>
-        Welcome to <b>Gatsby!</b>
+        Welcome to <b>Edge-Of-Piercing</b>
       </h1>
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
