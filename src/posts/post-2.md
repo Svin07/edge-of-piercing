@@ -2,7 +2,7 @@
 title: Пірсинг Соска
 category: types-of-piercing
 url: nipple-piercing
-image: ../images/woman-2739390_1280-min.jpg
+image: ../images/woman-5895831_1920-min.jpg
 ---
 
 # Пірсинг Соска

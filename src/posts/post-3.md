@@ -2,7 +2,7 @@
 title: Пірсинг Септум
 category: types-of-piercing
 url: septum-piercing
-image: ../images/woman-5895831_1920-min.jpg
+image: ../images/woman-2739390_1280-min.jpg
 ---
 
 # Септум
