@@ -18,15 +18,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
+      <div>
         <main>{children}</main>
-        <footer className="mt-5 bg-slate-200">
+        <footer className="mt-5 bg-slate-200 text-slate-900">
           © {new Date().getFullYear()} &middot; Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>

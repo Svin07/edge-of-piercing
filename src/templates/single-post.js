@@ -15,9 +15,11 @@ const SinglePost = ({ data }) => {
       <div>
         <h1>{title}</h1>
         <p>{`/${category}/${url}`}</p>
-        <div>
+
+        <div className="">
           <GatsbyImage image={img} className="rounded-xl" alt={title} />
         </div>
+
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
 
@@ -41,12 +43,8 @@ export const query = graphql`
         url
         category
         image {
-          childrenImageSharp {
-            gatsbyImageData(
-              formats: JPG
-              layout: FULL_WIDTH
-              placeholder: BLURRED
-            )
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, width: 500, formats: AUTO)
           }
         }
       }
