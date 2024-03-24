@@ -12,7 +12,7 @@ const SinglePost = ({ data }) => {
 
   return (
     <Layout>
-      <div>
+      <div className="">
         <h1>{title}</h1>
         <p>{`/${category}/${url}`}</p>
 

@@ -5,14 +5,13 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const SecondPage = () => {
-  const pageContext = {
-    nav: true,
-  }
   return (
     <Layout>
-      <h1>Про мій сайт :)</h1>
-      <p>Тут буде опис та мета сайту</p>
-      <Link to="/">Go back to the homepage</Link>
+      <div className="h-dvh w-screen object-cover bg-lime-200 text-amber-500 bg-[url('../images/bg_1_3.png')]">
+        <h1>Про мій сайт :)</h1>
+        <p>Тут буде опис та мета сайту</p>
+        <Link to="/">Go back to the homepage</Link>
+      </div>
     </Layout>
   )
 }
