@@ -12,18 +12,23 @@ const SinglePost = ({ data }) => {
 
   return (
     <Layout>
-      <div className="">
-        <h1>{title}</h1>
-        <p>{`/${category}/${url}`}</p>
+      <section>
+        <div className="w-full max-w-sm  md:max-w-3xl xl:max-w-5xl mx-auto p-6 md:p-10 xl:p-12">
+          <h1>{title}</h1>
+          <p>{`/${category}/${url}`}</p>
 
-        <div className="">
-          <GatsbyImage image={img} className="rounded-xl" alt={title} />
+          <div>
+            <GatsbyImage
+              className="block mx-auto rounded-xl max-w-xl"
+              image={img}
+              alt={title}
+            />
+          </div>
+
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <Link to="/">Go back to the homepage</Link>
         </div>
-
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
-
-      <Link to="/">Go back to the homepage</Link>
+      </section>
     </Layout>
   )
 }
@@ -44,7 +49,7 @@ export const query = graphql`
         category
         image {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, width: 500, formats: AUTO)
+            gatsbyImageData(placeholder: BLURRED, width: 960, formats: AUTO)
           }
         }
       }

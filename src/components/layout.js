@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>{children}</main>
-        <footer className="mt-5 bg-slate-200 text-slate-900">
+        <footer className="py-5 bg-slate-200 text-slate-900">
           © {new Date().getFullYear()} &middot; Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
