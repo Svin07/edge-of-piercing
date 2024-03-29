@@ -5,11 +5,13 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import PostList from "../components/PostList.jsx"
+import Btn from "../components/btn.js"
 
 const SecondPage = ({ data }) => {
   const { nodes } = data.allMarkdownRemark
   return (
     <Layout>
+      <Btn />
       <h1>Hi from the second page</h1>
       <p>Welcome to page 2</p>
       <PostList data={nodes} />

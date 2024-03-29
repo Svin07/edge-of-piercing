@@ -12,7 +12,7 @@ const SinglePost = ({ data }) => {
 
   return (
     <Layout>
-      <section>
+      <section className="relative">
         <div className="w-full max-w-sm  md:max-w-3xl xl:max-w-5xl mx-auto p-6 md:p-10 xl:p-12">
           <h1>{title}</h1>
           <p>{`/${category}/${url}`}</p>
