@@ -6,8 +6,6 @@ function PostItem({ post }) {
   const { category, title, url, image } = post.frontmatter
   const img = getImage(image)
 
-  console.log(img)
-
   return (
     <li className="items-center border-2 border-solid border-white cursor-pointer hover:scale-105 hover:bg-slate-700 transition-transform">
       <Link
