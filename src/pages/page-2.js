@@ -15,7 +15,7 @@ const SecondPage = ({ data }) => {
   return (
     <Layout>
       <ScrollToTop
-        top={500}
+        top={60}
         smooth
         className="bg-orange-400 opacity-50 hover:opacity-100 fixed bottom-20 right-4 rounded-xl inline-flex items-center justify-center w-16 h-16"
         component={<img src={svg} alt="arrow up" />}
